@@ -45,4 +45,4 @@ echo "  * Packaging finished"
 ls
 echo ""
 echo "Helm is pushing to chartmuseum"
-helm push ${CHART_FOLDER}-* ${CHARTMUSEUM_URL} -u ${CHARTMUSEUM_USER} -p ${CHARTMUSEUM_PASSWORD} ${FORCE}
+helm push *.tgz ${CHARTMUSEUM_URL} -u ${CHARTMUSEUM_USER} -p ${CHARTMUSEUM_PASSWORD} ${FORCE}
