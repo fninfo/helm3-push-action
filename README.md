@@ -47,7 +47,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: unwrittenmedia/helm3-push-action@v1.0.2
+    - uses: fninfo/helm3-push-action@master
       env:
         SOURCE_DIR: 'charts'
         CHART_FOLDER: 'myapp'
@@ -67,7 +67,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: unwrittenmedia/helm3-push-action@v1.0.2
+    - uses: fninfo/helm3-push-action@master
       env:
         SOURCE_DIR: 'charts'
         CHART_FOLDER: 'myapp'
